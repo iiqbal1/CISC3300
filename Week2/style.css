@@ -1,0 +1,25 @@
+
+div.p{
+	 font-family: "Times New Roman", Times, serif;
+	 font-size: 17px;
+
+}
+div.l{
+	color: silver;
+}
+h1 {
+  background-color: yellow;
+}
+
+p {
+  background-color: yellow;
+}
+body{
+	background-color: black;
+}
+a:visited{
+	color: white;
+}
+a:hover {
+  background-color: black;
+}
