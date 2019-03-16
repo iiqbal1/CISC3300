@@ -1,0 +1,175 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -100;
+}
+
+* {
+  box-sizing: border-box;
+}
+.gallery{
+  margin: 0;
+  font-family: Arial;
+  background-color: black;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: white;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: black;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: grey;
+  color: white;
+}
+
+.sidenav {
+  width: 17%;
+  position: fixed;
+  z-index: 1;
+  top: 35%;
+  left: 10px;
+  background: white;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 2% 2% 2% 2%;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.main {
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.profnav {
+  position: fixed;
+  z-index: 2;
+  top: 70%;
+  left: 43%;
+  background: white;
+  overflow-x: hidden;
+}
+
+.profnav a {
+  padding: 2% 2% 2% 2%;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+}
+
+.profnav a:hover {
+  color: grey;
+}
+.profile img{
+  border-radius: 50%;
+  left: 50%;
+  padding-top: 10%;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.fa:hover {
+    opacity: 0.3;
+}
+.fa-facebook {
+  color: white;
+  padding: 2% 2% 2% 2%;
+
+}
+.fa-linkedin {
+  color: white;
+  padding: 2% 2% 2% 2%;
+
+}
+.fa-instagram {
+  color: white;
+  padding: 2% 2% 2% 2%;
+
+}
+.logoshome{
+  position: fixed;
+  top: 93%;
+  left: 47%;
+  overflow-x: hidden;
+}
+.logos{
+  left: 47%;
+  overflow-x: hidden;
+}
