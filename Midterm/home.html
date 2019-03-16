@@ -3,40 +3,57 @@
 <head>
 	<title>Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- used for icon logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 <body>
-
-
-
-
-</div>
+<!-- Background video. code from w3 schools. Idea from Ruslin  https://www.w3schools.com/howto/howto_css_fullscreen_video.asp-->
 <video autoplay muted loop id="myVideo">
-  <source src="images/1080p.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
+  <source src="images/2160.mp4" type="video/mp4">
 </video>
 
-
+<!-- Profile picture -->
 <div class= "profile">
-<center>
-<img src="images/img40.jpg" width=25% height=25%>
-</center>
+  <center>
+    <img src="images/img40.jpg" width=25% height=25%>
+  </center>
+<!-- profile navbar -->
 <div class="profnav">
-<center>
-<ul>
-  <li><a class="active" href="home.html">Home</a></li>
-  <li><a href="gallery.html">Gallery</a></li>
-  <li><a href="about.html">About</a></li>
-</ul>
-</center>
+  <center>
+    <ul>
+      <li><a class="active" href="home.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+   </ul>
+  </center>
+<!-- button to pause/play video. credit to w3schools https://www.w3schools.com/howto/howto_css_fullscreen_video.asp-->
 </div>
+<div class="btn">
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+<!-- social media logos -->
 <div class="logoshome">
-<a href="https://www.facebook.com/raimundo.sanchez.92" class="fa fa-facebook"></a>
-<a href="https://www.linkedin.com/in/raimundo-sanchez/" class="fa fa-linkedin"></a>
-<a href="https://www.instagram.com/ray_visualprojects/" class="fa fa-instagram"></a>
+  <a href="https://www.facebook.com/raimundo.sanchez.92" class="fa fa-facebook"></a>
+  <a href="https://www.linkedin.com/in/raimundo-sanchez/" class="fa fa-linkedin"></a>
+  <a href="https://www.instagram.com/ray_visualprojects/" class="fa fa-instagram"></a>
 </div>
+<!-- script is in html will add to js -->
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 
 </body>
 </html>
