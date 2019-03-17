@@ -127,9 +127,9 @@ div.content {
   }
 }
 
-.main {
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+a,h4,h2{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
 }
 .profnav {
   position: fixed;
@@ -138,12 +138,14 @@ div.content {
   left: 43%;
   background: white;
   overflow-x: hidden;
+  font-family: Arial;
+
 }
 
 .profnav a {
   padding: 2% 2% 2% 2%;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #111;
   display: block;
 }
@@ -154,7 +156,7 @@ div.content {
 .profile img{
   border-radius: 50%;
   position:center;
-  padding-top: 10%;
+  padding-top: 4%;
 }
 .fa {
   padding: 20px;
@@ -224,3 +226,71 @@ div.content {
   background: #ddd;
   color: black;
 }
+/*type writer from https://css-tricks.com/snippets/css/typewriter-effect/*/
+.typewriter h1 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  padding-top:5%; 
+  font-size: 30px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 10s steps(30, end),
+    blink-caret .8s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+h2,h4{
+  color:white ;
+}
+h3{
+  color: white; 
+  font-size: 20px;
+  text-align:  center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40em;
+  animation: type 9s steps(60, end); 
+}
+
+h3:nth-child(2){
+  animation: type2 9s steps(60, end);
+}
+
+h3:nth-child(3){
+  animation: type3 9s steps(60, end);
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes type3{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+}
+h4.about {
+  margin-left: 15em;
+  margin-right:15em;
+}
+
